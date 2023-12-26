@@ -54,7 +54,7 @@ cors_proxy
     console.log("Running CORS Anywhere on " + host + ":" + port);
   });
 
-var URL = 'http://localhost:8080/';
+var URL = 'https://spam-sv.onrender.com';
 
 var interval = 30000;
 
