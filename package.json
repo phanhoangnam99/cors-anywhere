@@ -28,7 +28,9 @@
     "server.js"
   ],
   "dependencies": {
+    "axios": "^1.6.2",
     "http-proxy": "1.11.1",
+    "nodemon": "^3.0.2",
     "proxy-from-env": "0.0.1"
   },
   "devDependencies": {
@@ -43,7 +45,9 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha ./test/test*.js --reporter spec",
-    "test-coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/test.js test/test-ratelimit.js --reporter spec"
+    "test-coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/test.js test/test-ratelimit.js --reporter spec",
+
+    "nodemon":"nodemon server.js"
   },
   "engines": {
     "node": ">=0.10.0"
