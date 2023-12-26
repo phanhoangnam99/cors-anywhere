@@ -62,7 +62,7 @@ function sendRequest() {
   axios
     .get(URL)
     .then(function (res) {
-      console.log("Request Sent:", res.status, res.statusText);
+      console.log("Request Sent:", res.status, res.statusText,res.data);
       setTimeout(sendRequest, interval);
     })
     .catch(function (err) {
